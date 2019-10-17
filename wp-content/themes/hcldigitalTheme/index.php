@@ -500,7 +500,82 @@ endif;
 					</div>	
 					
 		</div>
-    </div>
+	</div>
+	
+	<div class="container-fluid">
+  <div class="row pl5">
+			<div class="col-12 col-md-12">
+				<h3 class="driveHeading">Snaps From Past Hackathons</h3>
+				
+				<div class="event">
+		
+		<div id="eventCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#eventCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#eventCarousel" data-slide-to="1"></li>
+                            
+          </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                         <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image1'))?>"" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image1'))?>" alt="Event Pictures" class="img-fluid eventPic" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                       
+                                         <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image1'))?>" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image2'))?>" alt="Event Pictures" class="img-fluid eventPic" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 text-right">
+                                         <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image1'))?>" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image3'))?>" alt="Event Pictures" class="img-fluid eventPic" />
+                                        </a>
+                                    </div>                                   
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                         <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image4'))?>" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image4'))?>" alt="Event Pictures" class="img-fluid eventPic" />
+                                        </a>
+                                      
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                       <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image5'))?>" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image5'))?>" alt="Event Pictures" class="img-fluid eventPic" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 text-right">
+                                        <a href="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image6'))?>" class="html5lightbox" title="Event Pictures" data-group="myEvents">
+                                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-fSection-slideshow-image6'))?>" alt="Event Pictures" class="img-fluid" />
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+							
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+			</div>
+		</div>
+		</div>
+
+			</div>
     <div>
         <p></p>
 </div>

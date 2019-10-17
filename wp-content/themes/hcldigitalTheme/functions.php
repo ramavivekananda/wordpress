@@ -15,7 +15,7 @@ function loadjs() {
 add_action('wp_enqueue_scripts', 'loadjs');
 
 function hackathonFirstSection($wp_customize) {
-    $wp_customize->add_section('hclDigitalHack-firstSection', array('title'=>'hclDigitalHack-firstSection'));
+    $wp_customize->add_section('hclDigitalHack-firstSection', array('title'=>'Top Banner Content Area'));
 
     $wp_customize->add_setting('hclDigitalHack-content-headLine', array('default'=> 'Drive the next phase of'));
 
@@ -63,13 +63,14 @@ function hackathonFirstSection($wp_customize) {
     'section' => 'hclDigitalHack-firstSection',
     'settings'=> 'hclDigitalHack-content-image',
     'width'=>666,
-    'height'=> 410
+    'height'=> 410,
+    'default'=>''
     )));
 }
 add_action('customize_register','hackathonFirstSection');
 
 function hackathonSecondSection($wp_customize) {
-     $wp_customize->add_section('hclDigitalHack-secondSection', array('title'=>'hclDigitalHack-secondSection'));
+     $wp_customize->add_section('hclDigitalHack-secondSection', array('title'=>'Middle Content Area'));
 
      $wp_customize->add_setting('hclDigitalHack-content-area', array('default'=> 'At HCL, we believe that the smartest minds deserve the opportunity to tackle the biggest business problems. Our Seattle Hackathon is an attempt to discover the sharpest technocrats, and provide them with the opportunity, tools, and incentives for helping global enterprises leverage digital to transform their business. From reinventing retail to revolutionizing the in-store experience, and to harnessing the power of data, we invite Front-end, API, Full-stack, and DevOps engineers to showcase and get rewarded for their skills in a day of innovation, agility, and technology.'));
 
@@ -83,7 +84,7 @@ function hackathonSecondSection($wp_customize) {
 add_action('customize_register','hackathonSecondSection');
 
 function hackathonThirdSection($wp_customize) {
-    $wp_customize->add_section('hclDigitalHack-thirdSection', array('title'=>'hclDigitalHack-thirdSection'));
+    $wp_customize->add_section('hclDigitalHack-thirdSection', array('title'=>'Prizes For Winners & Participants Area'));
 
     $wp_customize->add_setting('hclDigitalHack-tSection-heading', array('default'=> 'Exciting Prizes For Winners & Participants'));
 
@@ -172,5 +173,72 @@ function hackathonThirdSection($wp_customize) {
     )));
 
 }
+
 add_action('customize_register','hackathonThirdSection');
+
+function hackathonFourthSection($wp_customize) {
+    $wp_customize->add_section('hclDigitalHack-fourthSection', array('title'=>'Past Hackathon Slideshow'));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image1', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage1', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image1',
+    'width'=>376,
+    'height'=> 212
+    )));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image2', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage2', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image2',
+    'width'=>376,
+    'height'=> 212
+    )));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image3', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage3', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image3',
+    'width'=>376,
+    'height'=> 212
+    )));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image4', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage4', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image4',
+    'width'=>376,
+    'height'=> 212
+    )));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image5', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage5', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image5',
+    'width'=>376,
+    'height'=> 212
+    )));
+
+    $wp_customize->add_setting('hclDigitalHack-fSection-slideshow-image6', array('default'=> 'wp-content/uploads/2019/10/cropped-seattle-banner-2-1.png'));
+
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'hclDigitalHack-fslideshowImage6', array(
+    'label'=> 'Image',
+    'section' => 'hclDigitalHack-fourthSection',
+    'settings'=> 'hclDigitalHack-fSection-slideshow-image6',
+    'width'=>376,
+    'height'=> 212
+    )));
+}
+
+add_action('customize_register','hackathonFourthSection');
 ?>
