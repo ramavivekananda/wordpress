@@ -1,0 +1,21 @@
+.dropdowntextholder{
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px !important;
+    transition: all ease-in-out 1s;
+}
+.dropdownopener {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+.dropdowncloser {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+.dropdownopener  , .dropdowncloser {
+    cursor: pointer;
+}
