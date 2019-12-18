@@ -18,12 +18,78 @@ $link .= $_SERVER['REQUEST_URI'];
   
 ?>
 
+<div class="container-fluid">
+		<div class="row dh-prize-row">
+			<div class="col-12 col-md-12">
+                <h3 class="driveHeading dh-prize-top-heading"><?php echo get_theme_mod('hclDigitalHack-tSection-heading')?><br />
+                <small><?php //echo get_theme_mod('hclDigitalHack-tSection-heading2')?></small></h3>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container-fluid">
+		  <div class="row pl10 justify-content-between">
+          <div class="col-md-4 col-12 cardBox1 justify-content-center dh-prize-row">
+          <h1 class="dh-prize-heading">2<sup>nd</sup> Prize</h1>
+						<p class="text-center">
+                <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
+						<h4 class="text-center">
+            $500
+                        <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer')?>
+               <strong class="colortxt"><?php //echo get_theme_mod('hclDigitalHack-tscontent-offer2')?></strong> <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer3')?>
+               
+						</h4>
+			  		
+						
+					</div>
+          <div class="col-md-4 col-12 cardBox1 justify-content-center dh-prize-1st dh-prize-row">
+            <h1 class="dh-prize-heading dh-first-price">1<sup>st</sup> Prize</h1>
+						<p class="text-center">
+                      
+              <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
+						<h4 class="text-center">
+              $1000
+						</h4>
+			  		
+						
+					</div>
+              <div class="col-md-4 col-12 cardBox1 justify-content-center dh-prize-row" >
+              <h1 class="dh-prize-heading">3<sup>rd</sup> Prize</h1>
+							<p class="text-center">
+                <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
+              <h4 class="text-center">
+                $250
+              </h4>
+                  
+					</div>	
+		</div>
+  </div>
+  
+  <div class="container-fluid">
+		<div class="row dh-prize-row" id="scroll_pointing">
+			<div class="col-12 col-md-12">
+        <h3 class="driveHeading dh-prize-below-heading"><small><?php echo get_theme_mod('hclDigitalHack-tSection-heading2')?></small></h3>
+        <ul class="col-md-8 justify-content-center">
+          <li>
+          <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image'))?>" class="img-fluid" alt="For all participants" /><span><?php echo get_theme_mod('hclDigitalHack-tscontent-right-offer')?></span>
+          </li>
+
+          <li>
+            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image1'))?>" class="img-fluid" alt="Complimentary food" />
+            <span><?php echo get_theme_mod('hclDigitalHack-tscontent-right-offer1')?></span>
+        </li>
+      </ul>      
+			</div>
+		</div>
+    </div>
+
+
       <?php
     // echo "-----".$link. "----";
     if(have_posts()) :
         while(have_posts()) : the_post(); ?>
 <h2><!-- <a href="<?php //the_permalink(); ?> <?php the_title(); ?></a> --></h2>
-<?php the_content(); ?>
+<?php //the_content(); ?>
 <?php get_template_part('content','page'); ?> 
 <?php    endwhile;
     else :
@@ -61,14 +127,14 @@ endif;
           <div class="row justify-content-between pl5">
             <div class="col-12 col-md-5 justify-content-center">
                 <p class="text-center" style="color:#5853d1; font-size:16px;">We are excited at the prospect of hosting you at <br />the HCL Seattle Campus, for the Hackthon. <br />Please register if you are:</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon1.png" /><br />Front-end Engineer (UI)</p>
+                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon1.png" /><br /><span class="dh-dotNet-heading">.</span>NET Engineer</p>
                 <p>&nbsp;</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon2.png" /><br />API Engineer (APIs + Integration)</p>
+                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon2.png" /><br />Biztalk Engineer</p>
                 <p>&nbsp;</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon3.png" /><br />Full Stack Engineer</p>
+                <!-- <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon3.png" /><br />Full Stack Engineer</p>
                 <p>&nbsp;</p>
                 <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon4.png" /><br />DevOps Engineer</p>
-                <p>&nbsp;</p>
+                <p>&nbsp;</p> -->
                 <p>The full agenda of the Hackathon along with further details, will be communicated to all shortlisted candidated before the event.</p>
               
             </div>
@@ -102,27 +168,26 @@ endif;
   </div>
 </div>
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 		<div class="row">
 			<div class="col-12 col-md-12">
-                <h3 class="driveHeading"><?php echo get_theme_mod('hclDigitalHack-tSection-heading')?><br />
-                <small><?php echo get_theme_mod('hclDigitalHack-tSection-heading2')?></small></h3>
-                
+                <h3 class="driveHeading"><?php //echo get_theme_mod('hclDigitalHack-tSection-heading')?><br />
+                <small><?php //echo get_theme_mod('hclDigitalHack-tSection-heading2')?></small></h3>          
 			</div>
 		</div>
-    </div>
+    </div> -->
     
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
 		  <div class="row pl10 justify-content-between">
 			
 					<div class="col-md-5 col-12 cardBox1 justify-content-center" style="padding: 3% 0;">
 						<p class="text-center">
                       
-                        <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
+                        <img src="<?php //echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
 						<br />
 						<h4 class="text-center">
-                        <?php echo get_theme_mod('hclDigitalHack-tscontent-offer')?>
-							 <strong class="colortxt"><?php echo get_theme_mod('hclDigitalHack-tscontent-offer2')?></strong> <?php echo get_theme_mod('hclDigitalHack-tscontent-offer3')?>
+                        <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer')?>
+							 <strong class="colortxt"><?php //echo get_theme_mod('hclDigitalHack-tscontent-offer2')?></strong> <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer3')?>
 						</h4>
 			  		
 						
@@ -131,18 +196,18 @@ endif;
 						
 						<div class="row justify-content-center">
                             <div class="col-12 col-md-3 justify-content-center"><p style="padding:10px;" align="center">
-                            <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image'))?>" class="img-fluid" alt="For all participants" /></p></div>
-							<div class="col-12 col-md-8"><p class="display-5 mobtxt" style="padding-top:30px;"><?php echo get_theme_mod('hclDigitalHack-tscontent-right-offer')?></p></div>
+                            <img src="<?php //echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image'))?>" class="img-fluid" alt="For all participants" /></p></div>
+							<div class="col-12 col-md-8"><p class="display-5 mobtxt" style="padding-top:30px;"><?php //echo get_theme_mod('hclDigitalHack-tscontent-right-offer')?></p></div>
                             </div>
                   <p>&nbsp;</p>
                   <div class="row justify-content-center">
-							<div class="col-12 col-md-3 justify-content-center"><p style="padding:10px;" align="center"><img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image1'))?>" class="img-fluid" alt="Complimentary food" /></p></div>
-							<div class="col-12 col-md-8"><p class="display-5 mobtxt" style="padding-top:30px;"><?php echo get_theme_mod('hclDigitalHack-tscontent-right-offer1')?></p></div>
+							<div class="col-12 col-md-3 justify-content-center"><p style="padding:10px;" align="center"><img src="<?php //echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-rightcontent-image1'))?>" class="img-fluid" alt="Complimentary food" /></p></div>
+							<div class="col-12 col-md-8"><p class="display-5 mobtxt" style="padding-top:30px;"><?php //echo get_theme_mod('hclDigitalHack-tscontent-right-offer1')?></p></div>
 						</div>
 					</div>	
 					
 		</div>
-	</div>
+	</div> -->
 	
 	<div class="container-fluid">
   <div class="row pl5">

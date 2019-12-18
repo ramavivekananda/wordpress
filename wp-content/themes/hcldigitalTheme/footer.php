@@ -1,4 +1,20 @@
 <footer class="footer">
+<div id="sticky" class="dh-sticky-area">
+    <div class="dh-footer-prize">
+        <div class="dh-prize-area">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            <p>$500</p>
+        </div>
+        <div class="dh-prize-area">
+            <i class="fa fa-trophy dh-footer-1st-icon" aria-hidden="true"></i>
+            <p>$1000</p>
+        </div>
+        <div class="dh-prize-area">
+        <i class="fa fa-trophy" aria-hidden="true"></i>
+            <p>$250</p>
+        </div>    
+    </div>    
+</div>    
 <!-- <p><?php //bloginfo('name'); ?> - &copy; <?php //echo date("Y");?></p> -->
       <div class="container-fluid">
           <div class="row">
