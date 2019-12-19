@@ -152,7 +152,7 @@ endif;
                         <div class="col-12 mt-4">
 							<!-- <input name="txtName" type="text" id="txtName" class="form-control formField" placeholder="Name *" />
 							 <span id="rfvName" style="color:Red;font-size:Small;display:none;">*</span>	 -->
-							 <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
+							 <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } else  ninja_forms_display_form( 1 );
 							 ?>
                         </div>
                       </div>

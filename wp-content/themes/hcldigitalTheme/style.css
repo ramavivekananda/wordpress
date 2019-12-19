@@ -345,6 +345,9 @@ header{
 .dh-sticky-area.dh-active{
 	display: block;
 }
+.dh-sticky-area.dh-footer-show{
+	bottom:50px;
+}
 .dh-footer-prize{
 	width: 300px;
 	margin: 0px auto;
@@ -354,7 +357,7 @@ header{
 	float: left;
 	position: relative;
 	width: 33.3%;
-	padding: 10px 0;
+	padding: 0px 0px 10px 0;
 	text-align: center;
 }
 .dh-prize-area i{
@@ -369,6 +372,15 @@ header{
     padding: 0px;
 	line-height: 0px;
 	font-weight: bold;
+}
+.dh-prize-area img{
+	width: 33%;
+}
+.dh-prize-area:nth-child(2) img{
+	width: 50%;
+}
+.dh-prize-area:nth-child(2) p{
+	margin: 5px 0 0 0;
 }
 /* Prize section style end */
 
