@@ -382,6 +382,9 @@ header{
 .dh-prize-area:nth-child(2) p{
 	margin: 5px 0 0 0;
 }
+.registerButn{
+	margin-bottom: 15px;
+}
 /* Prize section style end */
 
 @media (min-width: 320px) and (max-width: 480px) {
