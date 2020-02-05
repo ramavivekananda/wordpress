@@ -4,17 +4,17 @@
         <div class="dh-prize-area">
             <!-- <i class="fa fa-trophy" aria-hidden="true"></i> -->
             <img src="<?php echo $link;?>wp-content/uploads/2019/10/prize-icon.png" />
-            <p>$500</p>
+            <p>€500</p>
         </div>
         <div class="dh-prize-area">
             <!-- <i class="fa fa-trophy dh-footer-1st-icon" aria-hidden="true"></i> -->
             <img src="<?php echo $link;?>wp-content/uploads/2019/10/prize-icon.png" />
-            <p>$1000</p>
+            <p>€1000</p>
         </div>
         <div class="dh-prize-area">
             <!-- <i class="fa fa-trophy" aria-hidden="true"></i> -->
             <img src="<?php echo $link;?>wp-content/uploads/2019/10/prize-icon.png" />
-            <p>$250</p>
+            <p>€250</p>
         </div>    
     </div>    
 </div>    

@@ -149,6 +149,7 @@ if ( ! empty( $_GET['action'] ) && in_array( $_GET['action'], $core_actions_get 
 }
 
 if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions_post ) ) {
+	echo "coming inside";
 	add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
 }
 

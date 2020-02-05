@@ -32,9 +32,9 @@ $link .= $_SERVER['REQUEST_URI'];
           <div class="col-md-4 col-12 cardBox1 justify-content-center dh-prize-row">
           <h1 class="dh-prize-heading">2<sup>nd</sup> Prize</h1>
 						<p class="text-center">
-                <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
+                <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than €1000 worth of prizes for the winners" /></p>
 						<h4 class="text-center">
-            $500
+            €500
                         <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer')?>
                <strong class="colortxt"><?php //echo get_theme_mod('hclDigitalHack-tscontent-offer2')?></strong> <?php //echo get_theme_mod('hclDigitalHack-tscontent-offer3')?>
                
@@ -48,7 +48,7 @@ $link .= $_SERVER['REQUEST_URI'];
                       
               <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
 						<h4 class="text-center">
-              $1000
+              €1000
 						</h4>
 			  		
 						
@@ -58,7 +58,7 @@ $link .= $_SERVER['REQUEST_URI'];
 							<p class="text-center">
                 <img src="<?php echo wp_get_attachment_url(get_theme_mod('hclDigitalHack-tSection-content-image'))?>" class="img-fluid" alt="More than $1000 worth of prizes for the winners" /></p>
               <h4 class="text-center">
-                $250
+                €250
               </h4>
                   
 					</div>	
@@ -126,15 +126,15 @@ endif;
         <div class="card-body">
           <div class="row justify-content-between pl5">
             <div class="col-12 col-md-5 justify-content-center">
-                <p class="text-center" style="color:#5853d1; font-size:16px;">We are excited at the prospect of hosting you at <br />the HCL Seattle Campus, for the Hackthon. <br />Please register if you are:</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon1.png" /><br /><span class="dh-dotNet-heading">.</span>NET Engineer</p>
+                <p class="text-center" style="color:#5853d1; font-size:16px;">We are excited at the prospect of hosting you at <br />the HCL Venue : Baza 3, Calea Chisinaului 26 Iasi Romania-707252 Campus, for the Hackthon. <br />Please register if you are:</p>
+                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon1.png" /><br /><b>.</b>Net Engineer</p>
                 <p>&nbsp;</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon2.png" /><br />Biztalk Engineer</p>
+                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon2.png" /><br />Data Analyst Engineer</p>
                 <p>&nbsp;</p>
                 <!-- <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon3.png" /><br />Full Stack Engineer</p>
-                <p>&nbsp;</p>
-                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon4.png" /><br />DevOps Engineer</p>
-                <p>&nbsp;</p> -->
+                <p>&nbsp;</p>-->
+                <p class="text-center"><img src="<?php echo $link;?>wp-content/uploads/2019/10/seattle-icon4.png" /><br />Azure DevOps Engineer</p>
+                <p>&nbsp;</p> 
                 <p>The full agenda of the Hackathon along with further details, will be communicated to all shortlisted candidated before the event.</p>
               
             </div>
@@ -152,7 +152,7 @@ endif;
                         <div class="col-12 mt-4">
 							<!-- <input name="txtName" type="text" id="txtName" class="form-control formField" placeholder="Name *" />
 							 <span id="rfvName" style="color:Red;font-size:Small;display:none;">*</span>	 -->
-							 <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } else  ninja_forms_display_form( 1 );
+							 <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } else  ninja_forms_display_form( 1 );
 							 ?>
                         </div>
                       </div>
